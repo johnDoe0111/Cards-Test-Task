@@ -14,6 +14,15 @@
     }
 }
 
+.loader {
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   div {
+    line-height: 100vh;
+   }
+}
+
 .undefined-wrapper {
     display: flex;
     height: 100vh;

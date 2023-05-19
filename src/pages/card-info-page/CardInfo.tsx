@@ -4,11 +4,12 @@ import { getCardId } from '../../store/reducers/getItemsAction';
 import { useEffect } from 'react';
 import { useAppDispatch, useAppSelector } from '../../hooks/hooks';
 import Info from '../../assets/images/info.jpg'
+import { InfinitySpin } from 'react-loader-spinner';
 
 const CardInfo = () => {
 
     const dispatch = useAppDispatch()
-    const {cardId} = useAppSelector(state => state.get)
+    const {cardId, isLoading} = useAppSelector(state => state.get)
     
     const {id} = useParams()
 
@@ -22,6 +23,19 @@ const CardInfo = () => {
     }, [dispatch, id])
 
     const {seen, title, about} = cardId
+
+    if (isLoading) {
+        return (
+            <div className="loader">
+                <div>
+                    <InfinitySpin 
+                    width='200'
+                    color="#4fa94d"
+                    />
+                </div>
+            </div>
+        )
+    }
     
     return (
         <div className='info-content'>
@@ -34,7 +48,7 @@ const CardInfo = () => {
                     <p className='first-p'>{title}</p>
                     <p className='about'>{about}</p>
                 </div>
-                <Link className='link' to='/'><p>На главную</p></Link>
+                <Link className='link' to='Cards-API'><p>На главную</p></Link>
             </div>
         </div>
     )

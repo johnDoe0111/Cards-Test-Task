@@ -18,5 +18,7 @@ export interface IItems {
 
 export type getItemsState = {
     getItems: IGetItems[],
-    cardId: IItems
+    cardId: IItems,
+    isLoading: boolean,
+    error: boolean
 }

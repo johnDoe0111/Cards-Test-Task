@@ -3,12 +3,13 @@ import { useAppDispatch, useAppSelector } from '../../hooks/hooks';
 import { getItemsAction } from '../../store/reducers/getItemsAction';
 import { useEffect, useState } from 'react';
 import Card from '../../components/card/Card';
-import ScrollTop from '../../assets/icons/Scroll-top.png'
+import ScrollTop from '../../assets/icons/Scroll-top.png';
+import { InfinitySpin } from 'react-loader-spinner';
 
 const HomePage = () => {
 
    const dispatch = useAppDispatch();
-   const {getItems} = useAppSelector(state => state.get)
+   const {getItems, isLoading, error} = useAppSelector(state => state.get)
 
    const [currentPage, setCurrentPage] = useState(1)
    const [visible, setVisible] = useState(false);
@@ -74,8 +75,18 @@ const HomePage = () => {
       dispatch(getItemsAction(currentPage))
    }, [dispatch, currentPage])
    
-   
-   if (!getItems) {
+   if (isLoading) {
+      return (
+        <div className="loader">
+          <div>
+            <InfinitySpin 
+               width='200'
+               color="#4fa94d"
+            />
+          </div>
+         </div>
+      )
+   } else if (error) {
       return (
          <div className='undefined-wrapper'>
             <div className={!getItems ? 'none' : 'items-undefined'}>
