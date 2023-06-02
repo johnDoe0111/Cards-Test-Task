@@ -1,118 +1,139 @@
 .card {
+  width: 224px;
+
+  img {
     width: 224px;
-    
+    height: 260px;
+    border-radius: 2px;
+  }
+  .card-footer {
+    padding: 10px 15px 19px 12px;
 
-    img{
-        width: 224px;
-        height: 260px;
-        border-radius: 2px;
+    .first-footer-div {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      p {
+        color: #2c2c2c;
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 25px;
+      }
+
+      .image-block {
+        cursor: pointer;
+        width: 20px;
+        height: 19px;
+        background-image: url("../../assets/icons/IconLike.png");
+      }
+
+      .image-active {
+        cursor: pointer;
+        width: 20px;
+        height: 19px;
+        background-image: url("../../assets/icons/IconLikeActive.png");
+        transition: 0.25s;
+      }
     }
-    .card-footer {
-        padding: 10px 15px 19px 12px;
-        
-        .first-footer-div {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            p {
-                color: #2C2C2C;
-                font-weight: 700;
-                font-size: 22px;
-                line-height: 25px;
-            }
-
-            .image-block {
-                cursor: pointer;
-                width: 20px;
-                height: 19px;
-                background-image: url('../../assets/icons/IconLike.png');
-            }
-
-            .image-active {
-                cursor: pointer;
-                width: 20px;
-                height: 19px;
-                background-image: url('../../assets/icons/IconLikeActive.png');
-                transition: 0.25s;
-            }
-        }
-        .name {
-            font-weight: 500;
-            font-size: 14px;
-            line-height: 16px;
-            padding-top: 10px;
-        }
-        .second-footer-div {
-            font-size: 12px;
-            line-height: 14px;
-            color: #8F8F8F;
-            padding-top: 10px;
-            display: flex;
-            justify-content: space-between;
-        }
+    .name {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 16px;
+      padding-top: 10px;
     }
-
-    .carousel-slide {
-        border: none;
-        position: relative;
+    .second-footer-div {
+      font-size: 12px;
+      line-height: 14px;
+      color: #8f8f8f;
+      padding-top: 10px;
+      display: flex;
+      justify-content: space-between;
     }
+  }
 
-    .carousel-slide img {
-       width: 224px;
-    }
+  .carousel-slide {
+    border: none;
+    position: relative;
+  }
+
+  .carousel-slide img {
+    width: 224px;
+  }
 }
 
 .card-second-variant {
-    width: 472px;
-    display: flex;
+  width: 472px;
+  display: flex;
+  border: 1px solid rgb(0 0 0 / 18%);
+  border-radius: 5px;
+  margin: 0 2px 0 4px;
 
-    img{
-        width: 156px;
-        height: 134px;
+  img {
+    width: 156px;
+    height: 134px;
+    border-radius: 2px;
+  }
+
+  .card-footer {
+    padding: 10px 15px 19px 12px;
+    width: 100%;
+    .first-footer-div {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      p {
+        color: #2c2c2c;
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 25px;
+      }
+
+      .image-block {
+        cursor: pointer;
+        width: 20px;
+        height: 19px;
+        background-image: url("../../assets/icons/IconLike.png");
+      }
+
+      .image-active {
+        cursor: pointer;
+        width: 20px;
+        height: 19px;
+        background-image: url("../../assets/icons/IconLikeActive.png");
+        transition: 0.25s;
+      }
     }
+    .name {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 16px;
+      padding-top: 10px;
+    }
+    .second-footer-div {
+      font-size: 12px;
+      line-height: 14px;
+      color: #8f8f8f;
+      padding-top: 10px;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}
+
+@media (max-width: 321px) {
+  .card {
+    margin: 0 auto;
+  }
+
+  .card-second-variant {
+    width: 310px;
 
     .card-footer {
-        padding: 10px 15px 19px 12px;
-        width: 100%;
-        .first-footer-div {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            p {
-                color: #2C2C2C;
-                font-weight: 700;
-                font-size: 22px;
-                line-height: 25px;
-            }
-
-            .image-block {
-                cursor: pointer;
-                width: 20px;
-                height: 19px;
-                background-image: url('../../assets/icons/IconLike.png');
-            }
-
-            .image-active {
-                cursor: pointer;
-                width: 20px;
-                height: 19px;
-                background-image: url('../../assets/icons/IconLikeActive.png');
-                transition: 0.25s;
-            }
+      .first-footer-div {
+        p {
+          font-size: 14px;
         }
-        .name {
-            font-weight: 500;
-            font-size: 14px;
-            line-height: 16px;
-            padding-top: 10px;
-        }
-        .second-footer-div {
-            font-size: 12px;
-            line-height: 14px;
-            color: #8F8F8F;
-            padding-top: 10px;
-            display: flex;
-            justify-content: space-between;
-        }
+      }
     }
+  }
 }

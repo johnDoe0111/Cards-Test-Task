@@ -1,1 +1,1 @@
-export const baseURL =  'https://testguru.ru/frontend-test/api/v1'
+export const baseURL = "https://testguru.ru/frontend-test/api/v1";

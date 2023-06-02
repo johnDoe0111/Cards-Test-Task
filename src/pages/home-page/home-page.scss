@@ -1,154 +1,153 @@
-.home-page-pending {
-    padding: 92px 0 31px 0;
-    display: flex;
-    flex-wrap: wrap;
-    width: 968px;
-    margin: 0 auto;
-    .home-pending-map {
-        width: 224px;
-        .scroll-skeleton {
-            width: 56px;
-            height: 8px;
-            background-color: #F8F8F8;
-        }
-    }
-}
-
 .loader {
-   height: 100vh;
-   display: flex;
-   justify-content: center;
-   div {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  div {
     line-height: 100vh;
-   }
+  }
 }
 
 .undefined-wrapper {
-    display: flex;
-    height: 100vh;
-    justify-content: center;
-    align-items: center;
-    .none {
-        display: none;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  .none {
+    display: none;
+  }
+  .items-undefined {
+    width: 251px;
+    text-align: center;
+    .first-p {
+      color: #00a0ab;
+      font-weight: 500;
+      font-size: 16.8px;
+      line-height: 19px;
     }
-    .items-undefined {
-        width: 251px;
-        text-align: center;
-        .first-p {
-            color: #00A0AB;
-            font-weight: 500;
-            font-size: 16.8px;
-            line-height: 19px;
-        }
-        .second-p {
-            padding-top: 9px;
-            color: #8F8F8F;
-            font-size: 14.4px;
-            line-height: 17px;
-        }
+    .second-p {
+      padding-top: 9px;
+      color: #8f8f8f;
+      font-size: 14.4px;
+      line-height: 17px;
     }
+  }
 }
 
 .home-page {
-    width: 992px;
+  width: 992px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 39px;
+  position: relative;
+
+  .show-more {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #00a0ab;
+    cursor: pointer;
+    width: 125px;
     margin: 0 auto;
+    padding-top: 31px;
+    border: none;
+    background: none;
+  }
+
+  .none {
+    display: none;
+  }
+
+  .cards {
     display: flex;
     flex-wrap: wrap;
-    padding-bottom: 39px;
-    position: relative;
+    gap: 24px;
+    padding-top: 92px;
+  }
 
-    .show-more {
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 16px;
-        color: #00A0AB;
-        cursor: pointer;
-        width: 125px;
-        margin: 0 auto;
-        padding-top: 31px;
-        border: none;
-        background: none;
+  .variants {
+    display: flex;
+    position: absolute;
+    top: 35px;
+    right: -120px;
+
+    .first-variant {
+      background-image: url("../../assets/icons/GroupDefaulth.png");
+      width: 31px;
+      height: 31px;
+      cursor: pointer;
+      &:hover {
+        background-image: url("../../assets/icons/GroupHover.png");
+        transition: 0.25s;
+      }
     }
 
-    .none {
-        display: none;
-    }
-    
-    .cards {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 24px;
-        padding-top: 92px;
-        
-    }
-    
-    .variants {
-        display: flex;
-        position: absolute;
-        top: 35px;
-        right: -120px;
-
-        .first-variant {
-            background-image: url('../../assets/icons/GroupDefaulth.png');
-            width: 31px;
-            height: 31px;
-            cursor: pointer;
-            &:hover {
-                background-image: url('../../assets/icons/GroupHover.png');
-                transition: 0.25s;
-            }
-        }
-
-        .first-variant-active {
-            background-image: url('../../assets/icons/GroupActive.png');
-            width: 31px;
-            height: 31px;
-            cursor: pointer;
-            transition: 0.25s;
-            &:hover {
-                background-image: url('../../assets/icons/GroupHover.png');
-                transition: 0.25s;
-            }
-        }
-
-        .second-variant {
-            background-image: url('../../assets/icons/Group2Default.png');
-            width: 31px;
-            height: 31px;
-            margin-left: 16px;
-            cursor: pointer;
-            &:hover {
-                background-image: url('../../assets/icons/Group2Hover.png');
-                transition: 0.25s;
-            }
-        }
-
-        .second-variant-active {
-            background-image: url('../../assets/icons/Group2Active.png');
-            width: 31px;
-            height: 31px;
-            cursor: pointer;
-            margin-left: 16px;
-            transition: 0.25s;
-            &:hover {
-                background-image: url('../../assets/icons/Group2Hover.png');
-                transition: 0.25s;
-            }
-        }
+    .first-variant-active {
+      background-image: url("../../assets/icons/GroupActive.png");
+      width: 31px;
+      height: 31px;
+      cursor: pointer;
+      transition: 0.25s;
+      &:hover {
+        background-image: url("../../assets/icons/GroupHover.png");
+        transition: 0.25s;
+      }
     }
 
-    .scroll-to-top {
-        display: flex;
-        align-items: center;
-        position: absolute;
-        bottom: 100px;
-        right: -100px;
-        background-color: transparent;
-
-       p {
-        color: #8F8F8F;
-        padding-top: 3px;
-        padding-left: 15px;
-       }
+    .second-variant {
+      background-image: url("../../assets/icons/Group2Default.png");
+      width: 31px;
+      height: 31px;
+      margin-left: 16px;
+      cursor: pointer;
+      &:hover {
+        background-image: url("../../assets/icons/Group2Hover.png");
+        transition: 0.25s;
+      }
     }
+
+    .second-variant-active {
+      background-image: url("../../assets/icons/Group2Active.png");
+      width: 31px;
+      height: 31px;
+      cursor: pointer;
+      margin-left: 16px;
+      transition: 0.25s;
+      &:hover {
+        background-image: url("../../assets/icons/Group2Hover.png");
+        transition: 0.25s;
+      }
+    }
+  }
+
+  .scroll-to-top {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 100px;
+    right: -100px;
+    background-color: transparent;
+
+    p {
+      color: #8f8f8f;
+      padding-top: 3px;
+      padding-left: 15px;
+    }
+  }
+}
+
+@media (max-width: 321px) {
+  .home-page {
+    width: 320px;
+  }
+
+  .variants {
+    max-width: 320px;
+    top: 0px;
+    left: 0px;
+  }
+
+  .cards {
+    display: block;
+  }
 }
