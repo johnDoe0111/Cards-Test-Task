@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="App">
       <Routes>
-        <Route path="/Cards-API" element={<HomePage />} />
+        <Route path="/Cards-Test-Task" element={<HomePage />} />
         <Route path="/card-info/:id" element={<CardInfo />} />
       </Routes>
     </div>

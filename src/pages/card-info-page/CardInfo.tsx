@@ -43,7 +43,7 @@ const CardInfo = () => {
           <p className="first-p">{title}</p>
           <p className="about">{about}</p>
         </div>
-        <Link className="link" to="/Cards-API">
+        <Link className="link" to="/Cards-Test-Task">
           <p>На главную</p>
         </Link>
       </div>
