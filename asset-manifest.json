@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/Cards-Test-Task/static/css/main.3b32afd3.css",
+    "main.js": "/Cards-Test-Task/static/js/main.bb997671.js",
+    "static/media/info.jpg": "/Cards-Test-Task/static/media/info.e4a31e361d1525a1fdd2.jpg",
+    "static/media/first-photo.jpg": "/Cards-Test-Task/static/media/first-photo.e8ab901f2c85f487f58b.jpg",
+    "static/media/second-photo.jpg": "/Cards-Test-Task/static/media/second-photo.a2878e62d3278362f65f.jpg",
+    "static/media/third-photo.jpg": "/Cards-Test-Task/static/media/third-photo.b995cefd26690a4c1cd9.jpg",
+    "static/media/slick.svg": "/Cards-Test-Task/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/Cards-Test-Task/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/Cards-Test-Task/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/Cards-Test-Task/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/Cards-Test-Task/index.html",
+    "main.3b32afd3.css.map": "/Cards-Test-Task/static/css/main.3b32afd3.css.map",
+    "main.bb997671.js.map": "/Cards-Test-Task/static/js/main.bb997671.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3b32afd3.css",
+    "static/js/main.bb997671.js"
+  ]
+}
